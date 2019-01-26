@@ -7,7 +7,7 @@
 :root {
 	--hue: 223;
 	--accent-color: hsl(var(--hue), 100%, 50%);
-	--link-transition: all 250ms 33ms cubic-bezier(0.19, 1, 0.22, 1);
+	--link-transition: 250ms 33ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 html {
@@ -62,7 +62,7 @@ a {
 	text-decoration: none;
 	position: relative;
 	outline: none;
-	transition: var(--link-transition);
+	transition: color var(--link-transition);
 }
 a::before {
 	content: '';
@@ -75,7 +75,8 @@ a::before {
 	z-index: -1;
 	background-color: hsl(var(--hue), 75%, 92%);
 	transform: translateY(0%) rotateZ(-3deg);
-	transition: var(--link-transition);
+	transition: background-color var(--link-transition),
+		transform var(--link-transition);
 }
 a:hover,
 a:focus {
