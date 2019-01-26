@@ -7,7 +7,7 @@
 :root {
 	--hue: 223;
 	--accent-color: hsl(var(--hue), 100%, 50%);
-	--ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+	--link-transition: all 250ms 33ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 html {
@@ -62,24 +62,29 @@ a {
 	text-decoration: none;
 	position: relative;
 	outline: none;
+	transition: var(--link-transition);
 }
 a::before {
 	content: '';
 	display: block;
 	height: 0.5rem;
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	top: 50%;
+	right: -0.2rem;
+	left: -0.1rem;
 	z-index: -1;
 	background-color: hsl(var(--hue), 75%, 92%);
-	transform: rotateZ(-3deg);
+	transform: translateY(0%) rotateZ(-3deg);
+	transition: var(--link-transition);
+}
+a:hover,
+a:focus {
+	color: white;
 }
 a:hover::before,
 a:focus::before {
-	transition: all 333ms var(--ease-out-expo);
-	transform: rotateZ(-1deg);
-	box-shadow: 0 0.083rem 0 var(--accent-color);
+	background-color: var(--accent-color);
+	transform: translateY(-50%) rotateZ(-1deg) scaleY(2);
 }
 
 p {
