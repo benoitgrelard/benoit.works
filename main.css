@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 :root {
 	--hue: 223;
 	--accent-color: hsl(var(--hue), 100%, 50%);
@@ -7,6 +13,7 @@
 html {
 	font-size: 24px;
 	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -35,7 +42,7 @@ body {
 
 h1 {
 	margin: 1rem 0;
-	color: hsl(var(--hue), 15%, 70%);
+	color: hsl(var(--hue), 15%, 50%);
 	font-size: 0.5rem;
 	font-weight: 200;
 	letter-spacing: 0.016rem;
@@ -105,7 +112,7 @@ ul.inline-list {
 }
 
 ul.inline-list li:not(:last-child)::after {
-	content: "/";
+	content: '/';
 	display: inline-block;
 	margin: 0 0.3rem;
 	color: var(--accent-color);
@@ -137,7 +144,7 @@ li.email {
 	background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="hsl(223, 100%, 50%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>');
 }
 
-@media(min-width: 32rem) {
+@media (min-width: 32rem) {
 	html {
 		font-size: 28px;
 	}
@@ -152,7 +159,7 @@ li.email {
 	}
 }
 
-@media(min-width: 48rem) {
+@media (min-width: 48rem) {
 	html {
 		font-size: 32px;
 	}
