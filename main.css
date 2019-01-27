@@ -33,6 +33,10 @@ body {
 	color: var(--accent-color);
 }
 
+.contain {
+	max-width: 16rem;
+}
+
 .avatar {
 	margin-top: 1rem;
 	width: 2rem;
@@ -50,10 +54,11 @@ h1 {
 }
 
 h2 {
-	margin: 1rem 0;
+	margin: 1.5rem 0 1rem;
 	color: var(--accent-color);
 	font-size: 1rem;
 	font-weight: 800;
+	line-height: 1.3;
 }
 
 a {
@@ -90,7 +95,6 @@ a:focus::before {
 
 p {
 	margin: 0 0 1rem;
-	max-width: 16rem;
 }
 
 hr {
@@ -115,6 +119,10 @@ ul.inline-list {
 	display: flex;
 	flex-wrap: wrap;
 	font-weight: 500;
+}
+
+ul.inline-list li {
+	margin-bottom: 0.2rem;
 }
 
 ul.inline-list li:not(:last-child)::after {
@@ -155,7 +163,7 @@ li.email {
 		font-size: 28px;
 	}
 
-	p {
+	.contain {
 		max-width: 14rem;
 	}
 
