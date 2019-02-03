@@ -112,7 +112,7 @@ strong {
 }
 
 blockquote {
-	margin: 1rem 0 0 2rem;
+	margin: 1rem 0 2rem 2rem;
 	position: relative;
 	font-style: italic;
 }
@@ -125,6 +125,13 @@ blockquote::before {
 	color: hsl(var(--hue), 75%, 92%);
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 6rem;
+}
+blockquote footer {
+	margin: 0.5rem 0;
+	color: hsl(var(--hue), 15%, 50%);
+	font-size: 0.6rem;
+	font-weight: 200;
+	text-align: right;
 }
 
 hr {
