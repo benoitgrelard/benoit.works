@@ -1,0 +1,66 @@
+@page {
+	margin: 2cm 3cm;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	padding: 0;
+	background-color: transparent;
+}
+
+.contain {
+	max-width: 32rem;
+}
+
+[data-page-break-before] {
+	page-break-before: always;
+}
+
+.contain:first-child > h1 {
+	color: unset;
+	font-weight: 600;
+}
+
+a:hover,
+a:focus {
+	color: unset;
+}
+a::before {
+	display: none;
+}
+a[data-print-link] {
+	font-weight: 600;
+}
+a[data-print-link][href*='//']::after {
+	content: ' — ' attr(href);
+	font-size: 0.85em;
+	font-weight: 300;
+	opacity: 0.7;
+}
+
+p {
+	text-align: justify;
+}
+
+ul.icons-list {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+ul.icons-list li {
+	padding-left: 0;
+	background: none !important;
+}
+
+hr {
+	margin: 3rem 0 2rem;
+	height: 0;
+	background: none;
+	transform: none;
+}
+
+blockquote::before {
+	display: none;
+}

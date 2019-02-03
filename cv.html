@@ -25,12 +25,11 @@
 		<meta name="twitter:site" content="@benoitgrelard" />
 
 		<link rel="icon" type="image/png" href="favicon.png" />
-		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="print.css" />
 	</head>
 
 	<body>
-		<!-- <body style="background-color: hsl(var(--hue), 40%, 96%);">
-		<div style="margin: 0 auto; margin-top: -1.5rem; padding: 1.5rem; overflow: hidden; background-color: hsl(var(--hue), 40%, 98%); box-shadow: 0 5px 30px hsla(var(--hue), 100%, 30%, 0.2); max-width: 32rem;"> -->
 		<div class="contain">
 			<h1>Benoît Grélard</h1>
 			<h2>Lead frontend developer<br />London, UK / 34</h2>
@@ -53,16 +52,22 @@
 
 			<ul class="icons-list">
 				<li class="github">
-					<a href="https://github.com/artisologic">GitHub</a>
+					<a href="https://github.com/artisologic" data-print-link>GitHub</a>
 				</li>
 				<li class="twitter">
-					<a href="https://mobile.twitter.com/benoitgrelard">Twitter</a>
+					<a href="https://mobile.twitter.com/benoitgrelard" data-print-link
+						>Twitter</a
+					>
 				</li>
 				<li class="linkedin">
-					<a href="https://www.linkedin.com/in/benoitgrelard">LinkedIn</a>
+					<a href="https://www.linkedin.com/in/benoitgrelard" data-print-link
+						>LinkedIn</a
+					>
 				</li>
 				<li class="email">
-					<a href="mailto:benoit.grelard@gmail.com">benoit.grelard@gmail.com</a>
+					<a href="mailto:benoit.grelard@gmail.com" data-print-link
+						>benoit.grelard@gmail.com</a
+					>
 				</li>
 			</ul>
 
@@ -128,7 +133,7 @@
 		<hr />
 
 		<div class="contain">
-			<h1>Career History</h1>
+			<h1 data-page-break-before>Career History</h1>
 
 			<h2>Fathom</h2>
 			<p>
@@ -244,7 +249,7 @@
 		<hr />
 
 		<div class="contain">
-			<h1>Skills</h1>
+			<h1 data-page-break-before>Skills</h1>
 
 			<h2>JavaScript</h2>
 
@@ -350,7 +355,7 @@
 		<hr />
 
 		<div class="contain">
-			<h1>Education</h1>
+			<h1 data-page-break-before>Education</h1>
 
 			<h2>2007 / Master's degree in software engineering</h2>
 			<p>
@@ -415,5 +420,4 @@
 			</blockquote>
 		</div>
 	</body>
-	<!-- </div> -->
 </html>
